@@ -16,7 +16,7 @@ export default function Balance() {
         <p className="text-slate-400">Resumen de tus ingresos registrados</p>
       </section>
 
-      {/* Total acumulado (sin meta) */}
+      {/* Total acumulado */}
       <section className="bg-slate-900 p-6 rounded-2xl border border-slate-800 text-center">
         <h3 className="text-slate-400 text-sm">Total acumulado</h3>
         <p className="text-3xl font-bold text-emerald-400 mt-1">

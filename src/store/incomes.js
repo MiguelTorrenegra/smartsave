@@ -44,6 +44,6 @@ export const useIncomeStore = create(
         set({ incomesByUser: all });
       },
     }),
-    { name: "finova_incomes_v2" } // nuevo namespace para no mezclar datos anteriores
+    { name: "finova_incomes_v2" } 
   )
 );

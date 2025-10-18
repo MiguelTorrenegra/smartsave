@@ -38,7 +38,7 @@ export default function App() {
                 Panel
               </Link>
 
-              {/* NUEVO: enlace a Balance */}
+              {/* Enlace a Balance */}
               <Link
                 className="px-3 py-1.5 rounded-md border border-slate-700 hover:bg-slate-800"
                 to="/balance"
@@ -58,7 +58,6 @@ export default function App() {
       </nav>
 
       {/* Contenido */}
-      {/* (amplié el ancho para que la tabla respire mejor) */}
       <main className="w-full p-0">
         <Routes>
           <Route

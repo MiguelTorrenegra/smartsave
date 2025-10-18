@@ -23,7 +23,7 @@ export default function Login() {
     <div
       className="w-screen min-h-[calc(100vh-64px)] flex items-center justify-center bg-cover bg-center"
       style={{
-        backgroundImage: "url('/fondo.jpg')", // usa el nombre de tu imagen aquí
+        backgroundImage: "url('/fondo.jpg')", 
       }}
     >
       <div className="bg-slate-900/80 backdrop-blur-md p-8 rounded-2xl shadow-lg w-full max-w-md border border-slate-700">
