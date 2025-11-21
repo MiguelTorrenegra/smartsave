@@ -8,11 +8,11 @@ export default function Login() {
   const [form, setForm] = useState({ email: "", password: "" });
   const [error, setError] = useState(null);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setError(null);
     try {
-      login(form);
+      await login(form);
       navigate("/app");
     } catch (err) {
       setError(err.message);

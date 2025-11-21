@@ -16,7 +16,7 @@ export default function Register() {
   const [err, setErr] = useState(null);
   const [success, setSuccess] = useState(null);
 
-  const submit = (e) => {
+  const submit = async (e) => {
     e.preventDefault();
     setErr(null);
     setSuccess(null);
@@ -27,12 +27,14 @@ export default function Register() {
     }
 
     try {
-      register({
+      await register({
         name: form.name,
         email: form.email,
         password: form.password,
       });
-      setSuccess("✅ Usuario creado correctamente. Redirigiendo al inicio de sesión...");
+      setSuccess(
+        "✅ Usuario creado correctamente. Redirigiendo al inicio de sesión..."
+      );
       setTimeout(() => navigate("/login"), 2000);
     } catch (e) {
       setErr(e.message);
